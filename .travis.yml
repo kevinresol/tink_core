@@ -14,6 +14,8 @@ haxe:
 #     - haxe: development
     
 install:
+  - haxelib git tink_io https://github.com/haxetink/tink_io pure
+  - haxelib git tink_io https://github.com/haxetink/tink_cli pure
   - haxelib git travix https://github.com/back2dos/travix tink_cli && pushd . && cd $(haxelib config)travix/git && haxe build-neko.hxml && popd
   - haxelib run travix install
 
